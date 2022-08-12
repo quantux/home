@@ -9,13 +9,9 @@ eval "$(oh-my-posh init zsh --config ~/.poshthemes/powerlevel10k_lean.omp.json)"
 #ZSH_THEME="cloud"
 #ZSH_THEME="spaceship"
 
-#plugins=( git )
+plugins=(git asdf)
 
 source $ZSH/oh-my-zsh.sh
-
-# NVM
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # PHP Composer path
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
@@ -47,10 +43,4 @@ zinit light zsh-users/zsh-completions
 
 # alias
 alias upgrade="sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y";
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
-# Ruby on Rails
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
