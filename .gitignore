@@ -2,4 +2,4 @@
 !.gitignore
 !.zshrc
 !.vimrc
-
+!.config/nvim/*

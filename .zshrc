@@ -44,3 +44,38 @@ zinit light zsh-users/zsh-completions
 # alias
 alias upgrade="sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y";
 
+# android studio
+alias studio="/usr/share/android-studio/bin/studio.sh"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# tmux colors
+echo  "export TERM=xterm-256color" >> ~/.zshrc
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
+export TERM=xterm-256color
