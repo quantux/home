@@ -23,7 +23,8 @@ call plug#begin()
     Plug 'matze/vim-move'
     Plug 'vim-airline/vim-airline'
     Plug 'kyazdani42/nvim-web-devicons'
-    Plug 'romgrk/barbar.nvim'
+    " Plug 'romgrk/barbar.nvim'
+    Plug 'nvim-lua/completion-nvim'
 call plug#end()
 
 set encoding=UTF-8
