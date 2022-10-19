@@ -3,3 +3,4 @@
 !.zshrc
 !.vimrc
 !.config/nvim/**
+!.tmux.conf
