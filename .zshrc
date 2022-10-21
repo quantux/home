@@ -50,5 +50,5 @@ alias studio="/usr/share/android-studio/bin/studio.sh"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # tmux colors
-echo  "export TERM=xterm-256color" >> ~/.zshrc
 export TERM=xterm-256color
+
