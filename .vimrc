@@ -21,6 +21,7 @@ call plug#begin()
     Plug 'tpope/vim-fugitive'
     Plug 'matze/vim-move'
     Plug 'vim-airline/vim-airline'
+    Plug 'jschmold/sweet-dark.vim'
 call plug#end()
 
 set encoding=UTF-8

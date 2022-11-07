@@ -17,8 +17,8 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 
 # ANDROID HOME PATH
-#export ANDROID_HOME=$HOME/Android/Sdk
-export ANDROID_HOME=/usr/lib/android-sdk
+export ANDROID_HOME=$HOME/Android/Sdk
+#export ANDROID_HOME=/usr/lib/android-sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
