@@ -54,7 +54,7 @@ nnoremap <C-b> :NERDTreeToggle<CR>
 nnoremap <C-p> :Files<CR>
 
 " Set theme
-colorscheme onedark
+silent! colorscheme onedark
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
