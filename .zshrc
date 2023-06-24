@@ -47,8 +47,20 @@ alias upgrade="sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -
 # android studio
 alias studio="/usr/share/android-studio/bin/studio.sh"
 
+#beep sound
+alias beep="play -n synth 0.1 sine 880 vol 0.5"
+
+# nvim
+alias vim=nvim
+alias vi=nvim
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # tmux colors
-export TERM=xterm-256color
+export TERM='xterm-256color'
+export EDITOR='nvim'
+export VISUAL='nvim'
+
+# Homebrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
