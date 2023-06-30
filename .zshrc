@@ -57,7 +57,7 @@ alias vi=nvim
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # tmux colors
-export TERM='xterm-256color'
+export TERM='screen-256color'
 export EDITOR='nvim'
 export VISUAL='nvim'
 
