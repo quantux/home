@@ -57,15 +57,9 @@ alias vi=nvim
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # tmux colors
-export TERM='screen-256color'
+export TERM='xterm-256color'
 export EDITOR='nvim'
 export VISUAL='nvim'
 
 # Homebrew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-#autostart tmux
-if [ -z "$TMUX" ]
-then
-    tmux attach -t TMUX || tmux new -s TMUX
-fi
