@@ -18,7 +18,6 @@ export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 
 # ANDROID HOME PATH
 export ANDROID_HOME=$HOME/Android/Sdk
-#export ANDROID_HOME=/usr/lib/android-sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
@@ -43,16 +42,15 @@ zinit light zsh-users/zsh-completions
 
 # alias
 alias upgrade="sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y";
+alias vim=nvim
+alias vi=nvim
+alias reboot="systemctl reboot -i"
 
 # android studio
 alias studio="/usr/share/android-studio/bin/studio.sh"
 
 #beep sound
 alias beep="play -n synth 0.1 sine 880 vol 0.5"
-
-# nvim
-alias vim=nvim
-alias vi=nvim
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
