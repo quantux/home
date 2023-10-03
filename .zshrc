@@ -45,7 +45,7 @@ alias upgrade="sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -
 alias vim=nvim
 alias vi=nvim
 alias reboot="systemctl reboot -i"
-alias nemo="nemo . > /tmp/nemo_output.log 2>&1 &"
+#alias nemo="nemo . > /tmp/nemo_output.log 2>&1 &"
 
 # android studio
 alias studio="/usr/share/android-studio/bin/studio.sh"
