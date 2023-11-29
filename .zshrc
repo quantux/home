@@ -16,7 +16,15 @@ source $ZSH/oh-my-zsh.sh
 # PHP Composer path
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 
-# ANDROID HOME PATH
+# Android Studio
+export PATH=$PATH:/usr/share/android-studio/
+export PATH=$PATH:/usr/share/android-studio/bin/
+export PATH=$PATH:$HOME/Android/Sdk/tools/
+export PATH=$PATH:$HOME/Android/Sdk/cmdline-tools/latest/bin/
+export PATH=$PATH:$HOME/Android/Sdk/build-tools/33.0.0/
+#export PATH=$PATH:$HOME/Android/Sdk/cmdline-tools/latest/bin
+
+# ANDROID_HOME PATH
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
