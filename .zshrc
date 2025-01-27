@@ -8,6 +8,7 @@ eval "$(oh-my-posh init zsh --config ~/.poshthemes/powerlevel10k_lean.omp.json)"
 #ZSH_THEME="awesomepanda"
 #ZSH_THEME="cloud"
 #ZSH_THEME="spaceship"
+#ZSH_THEME="gentoo"
 
 plugins=(git asdf)
 
@@ -49,14 +50,16 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 
 # alias
-alias upgrade="sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y && sudo flatpak update -y && brew update && brew upgrade && cinnamon-spice-updater --update-all";
-alias vim=nvim
-alias vi=nvim
+alias upgrade="sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y && sudo flatpak update -y && cinnamon-spice-updater --update-all";
+alias vim="/opt/nvim-linux64/bin/nvim"
+alias vi=vim
+alias nvim=vim
 alias reboot="systemctl reboot -i"
-#alias nemo="nemo . > /tmp/nemo_output.log 2>&1 &"
+alias brew="/home/linuxbrew/.linuxbrew/bin/brew"
+alias testnet="while true; do ping -c 1 -W 1 8.8.8.8 > /dev/null && watch -n 1 play -n synth 0.1 sine 880 vol 0.5; sleep 5; done"
 
 # android studio
-alias studio="/usr/share/android-studio/bin/studio.sh"
+alias studio="/usr/bin/studio"
 
 #beep sound
 alias beep="play -n synth 0.1 sine 880 vol 0.5"
@@ -68,5 +71,15 @@ export TERM='xterm-256color'
 export EDITOR='nvim'
 export VISUAL='nvim'
 
-# Homebrew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# LineageOS Build
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+export USE_CCACHE=1
+export CCACHE_EXEC=/usr/bin/ccache
+export DRI_PRIME=1
+
+# loads python env
+source /home/mths/.scripts/python3-venv/bin/activate
